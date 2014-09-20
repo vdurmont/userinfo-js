@@ -16,7 +16,7 @@ module.exports = function (grunt) {
       options: {
         // the banner is inserted at the top of the output
         banner: "/*! <%= pkg.name %> <%= pkg.version %> [<%= grunt.template.today('dd-mm-yyyy') %>] */\n",
-        mangle: false
+        mangle: true
       },
       dist: {
         files: {
