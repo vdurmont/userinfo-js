@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>UserInfo AMD example</title>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.14/require.min.js"></script>
+    <script type="text/javascript">
+    requirejs.config({
+      "paths": {
+        "userinfo": "../dist/userinfo.0.0.1.min"
+      }
+    });
+    </script>
+    <script type="text/javascript">
+    require(['userinfo'], function(UserInfo) {
+        // console.log("Loaded :)");
+        // return {};
+      UserInfo.getInfo(function(data, err) {
+        if (err) {
+          showError(err.message);
+        } else {
+          showData(data);
+        }
+      });
+    });
+    </script>
+  </head>
+  <body>
+    <p>Loading...</p>
+  </body>
+</html>
