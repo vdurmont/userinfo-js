@@ -14,8 +14,6 @@
     </script>
     <script type="text/javascript">
     require(['userinfo'], function(UserInfo) {
-        // console.log("Loaded :)");
-        // return {};
       UserInfo.getInfo(function(data, err) {
         if (err) {
           showError(err.message);
