@@ -8,7 +8,7 @@ This library helps you query the [userinfo.io](http://userinfo.io) API and retri
 Just add the library to your html file:
 
 ```
-<script type="text/javascript" src="../dist/userinfo.0.0.1.min.js"></script>
+<script type="text/javascript" src="../dist/userinfo.min.js"></script>
 ```
 
 Note: this library is an AMD module so you can also use it with requirejs, curl, lsjs, etc.
