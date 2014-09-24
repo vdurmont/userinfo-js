@@ -14,12 +14,10 @@
     </script>
     <script type="text/javascript">
     require(['userinfo'], function(UserInfo) {
-      UserInfo.getInfo(function(data, err) {
-        if (err) {
-          showError(err.message);
-        } else {
-          showData(data);
-        }
+      UserInfo.getInfo(function(data) {
+        showData(data);
+      }, function(err) {
+        showError(err.message);
       });
     });
     </script>

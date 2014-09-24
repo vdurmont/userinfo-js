@@ -8,7 +8,7 @@
     var API_URL = "http://api.userinfo.io/userinfos";
 
     return {
-      getInfo: function(callback) {
+      getInfo: function(success, failure) {
         var xhr;
 
         if (window.XMLHttpRequest) {
@@ -22,7 +22,9 @@
         xhr.onreadystatechange = function() {
           if (xhr.readyState == 4 ) {
             if(xhr.status == 200){
-              callback(JSON.parse(xhr.responseText), null);
+              if (success) {
+                success(JSON.parse(xhr.responseText));
+              }
             } else {
               var err;
               if (xhr.responseText !== null && xhr.responseText !== "") {
@@ -30,7 +32,9 @@
               } else {
                 err = { message: "Error with HTTP status code: " + xhr.status };
               }
-              callback(null, err);
+              if (failure) {
+                failure(err);
+              }
             }
           }
         };

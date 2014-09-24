@@ -18,12 +18,10 @@ Note: this library is an AMD module so you can also use it with requirejs, curl,
 ### Call the API
 
 ```
-UserInfo.getInfo(function(data, err) {
-  if (err) {
-    // Do something with the error
-  } else {
-    // Do something with the data
-  }
+UserInfo.getInfo(function(data) {
+  // Do something with the data
+}, function(err) {
+  // Do something with the error
 });
 ```
 

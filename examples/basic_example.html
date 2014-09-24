@@ -6,12 +6,10 @@
     <script type="text/javascript" src="app.js"></script>
     <script type="text/javascript" src="../dist/userinfo.0.0.1.min.js"></script>
     <script type="text/javascript">
-    UserInfo.getInfo(function(data, err) {
-      if (err) {
-        showError(err.message);
-      } else {
-        showData(data);
-      }
+    UserInfo.getInfo(function(data) {
+      showData(data);
+    }, function(err) {
+      showError(err.message);
     });
     </script>
   </head>
