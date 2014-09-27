@@ -8,8 +8,10 @@ This library helps you query the [userinfo.io](http://userinfo.io) API and retri
 Just add the library to your html file:
 
 ```
-<script type="text/javascript" src="../dist/userinfo.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/userinfo/1.0.0/userinfo.min.js"></script>
 ```
+
+This will load the library from CDNJS. You can also download the [version 1.0.0](https://github.com/vdurmont/userinfo-js/releases/tag/v1.0.0) or use the [current development version](https://github.com/vdurmont/userinfo-js/blob/master/dist/userinfo.min.js) (may not be stable).
 
 Note: this library is an AMD module so you can also use it with requirejs, curl, lsjs, etc.
 
