@@ -1,7 +1,7 @@
 UserInfo.js
 ============
 
-This library helps you query the [userinfo.io](http://userinfo.io) API and retrieve usefull information about your user such as his IP address and his location.
+This library helps you query the [userinfo.io](http://userinfo.io) API and retrieve useful information about your user such as his IP address and his location.
 
 ## Installation
 
