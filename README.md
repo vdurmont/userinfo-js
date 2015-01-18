@@ -7,7 +7,7 @@ This library helps you query the [userinfo.io](http://userinfo.io) API and retri
 
 Just add the library to your html file:
 
-```
+```html
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/userinfo/1.0.0/userinfo.min.js"></script>
 ```
 
@@ -19,7 +19,7 @@ Note: this library is an AMD module so you can also use it with requirejs, curl,
 
 ### Call the API
 
-```
+```javascript
 UserInfo.getInfo(function(data) {
   // Do something with the data
 }, function(err) {
@@ -31,7 +31,7 @@ UserInfo.getInfo(function(data) {
 
 Here is an example of what is returned by the API:
 
-```
+```json
 {
   "request_date": "2014-09-21T01:20:46.861Z",
   "ip_address": "192.77.237.95",
