@@ -5,7 +5,7 @@
         root.UserInfo = factory();
     }
 }(this, function() {
-    var API_URL = "http://api.userinfo.io/userinfos";
+    var API_URL = "https://api.userinfo.io/userinfos";
 
     return {
         getInfo: function(success, failure) {
