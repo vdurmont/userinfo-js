@@ -1,6 +1,41 @@
 {
   "name": "userinfo",
   "version": "1.0.0",
+  "private": false,
+  "description": "Javascript wrapper for the userinfo.io API",
+  "keywords": [
+    "user",
+    "info",
+    "userinfo",
+    "location",
+    "geolocation",
+    "ip",
+    "address"
+  ],
+  "main": [
+    "dist/userinfo.min.js"
+  ],
+  "license": "https://github.com/vdurmont/userinfo-js/blob/master/LICENSE.md",
+  "homepage": "http://userinfo.io",
+  "ignore": [
+    "examples",
+    "src",
+    ".gitignore",
+    "Gruntfile.js",
+    "package.json"
+  ],
+  "authors": [
+    {
+      "name": "Vincent DURMONT",
+      "email": "vdurmont@gmail.com",
+      "homepage": "http://vincent-durmont.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:vdurmont/userinfo-js.git"
+  },
+  "dependencies": { },
   "devDependencies": {
     "grunt": "~0.4.5",
     "grunt-contrib-clean": "~0.6.0",
