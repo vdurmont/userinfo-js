@@ -8,10 +8,10 @@ This library helps you query the [userinfo.io](http://userinfo.io) API and retri
 Just add the library to your html file:
 
 ```html
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/userinfo/1.1.0/userinfo.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/userinfo/1.1.1/userinfo.min.js"></script>
 ```
 
-This will load the library from CDNJS. You can also download the [version 1.1.0](https://github.com/vdurmont/userinfo-js/releases/tag/v1.1.0) or use the [current development version](https://github.com/vdurmont/userinfo-js/blob/master/dist/userinfo.min.js) (may not be stable).
+This will load the library from CDNJS. You can also download the [version 1.1.1](https://github.com/vdurmont/userinfo-js/releases/tag/v1.1.1) or use the [current development version](https://github.com/vdurmont/userinfo-js/blob/master/dist/userinfo.min.js) (may not be stable).
 
 Note: this library is an AMD module so you can also use it with requirejs, curl, lsjs, etc.
 
@@ -59,6 +59,8 @@ Note that you will have to check the existence of the fields: if it can't resolv
 
 ## Changelog
 
+* **v1.1.1**
+    * Fix IE8 & IE9 issues with cross-domain requests
 * **v1.1.0**
     * The API url is now in https
     * Sending a `X-Userinfo-Client-Id` header with the requests to identify the client
