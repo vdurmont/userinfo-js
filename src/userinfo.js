@@ -75,7 +75,7 @@
                 };
 
                 xhr.open("GET", API_URL, true);
-                xhr.setRequestHeader("X-Userinfo-Client-Id", "userinfo-js:1.1.1");
+                xhr.setRequestHeader("X-Userinfo-Client-Id", "userinfo-js:1.1.2-SNAPSHOT");
                 xhr.send();
             }
         }
