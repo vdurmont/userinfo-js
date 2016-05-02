@@ -1,0 +1,28 @@
+{
+  "name": "userinfo",
+  "description": "Javascript wrapper for the userinfo.io API",
+  "main": [
+    "dist/userinfo.min.js"
+  ],
+  "authors": [
+    "Vincent Durmont <vdurmont@gmail.com>"
+  ],
+  "license": "https://github.com/vdurmont/userinfo-js/blob/master/LICENSE.md",
+  "keywords": [
+    "user",
+    "info",
+    "userinfo",
+    "location",
+    "geolocation",
+    "ip",
+    "address"
+  ],
+  "homepage": "https://github.com/vdurmont/userinfo-js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
